@@ -8,24 +8,24 @@
  * license.
  */
 
-  $stack = array();
+$stack = array();
 
-  // The top element is the last element in array.
-  if (empty($stack)) {
-    array_push($stack, 0);
-    array_push($stack, 3);
-    array_push($stack, 7);
-    array_push($stack, 13);
-  }
+// The top element is the last element in array.
+if (empty($stack)) {
+  array_push($stack, 0);
+  array_push($stack, 3);
+  array_push($stack, 7);
+  array_push($stack, 13);
+}
 
-  var_dump($stack);
+var_dump($stack);
 
-  if (!empty($stack)) {
-    array_pop($stack);
-  }
-  var_dump($stack);
+if (!empty($stack)) {
+  array_pop($stack);
+}
+var_dump($stack);
 
-  if (!empty($stack)) {
-    $top = array_pop($stack);
-    echo "The top element being dequeued is $top\n";
-  }
+if (!empty($stack)) {
+  $top = array_pop($stack);
+  echo "The top element being dequeued is $top\n";
+}
