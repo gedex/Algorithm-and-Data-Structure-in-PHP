@@ -22,5 +22,5 @@ if ($queue->isEmpty()) {
   $queue->enqueue(new SplStack());
 }
 
-// Throws RuntimeException if the stack is empty
+// Throws RuntimeException if the queue is empty
 var_dump($queue->top());
